@@ -46,9 +46,7 @@ class MetodosComWildCards<T extends Number> {
 	boolean valorAbsoluto(MetodosComWildCards<?> num) {
 		
 		//Comparando o valor absoluto dos dois numeros
-		if(Math.abs(obj.doubleValue()) == Math.abs(num.obj.doubleValue()))
-			return true; //Retornando true e false sem utilizar chaves
-		return false;
+		return Math.abs(obj.doubleValue()) == Math.abs(num.obj.doubleValue()); //Retornando true e false sem utilizar chaves
 	}
 	
 }
