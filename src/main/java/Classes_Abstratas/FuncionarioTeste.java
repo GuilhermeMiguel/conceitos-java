@@ -34,6 +34,9 @@ public class FuncionarioTeste {
 		Joana.calculaSalario();
 		
 		System.out.println(Joana);
+
+//		Não posso instanciar a classe abstrata
+//		var pessoa = new Pessoa();
 		
 	}
 

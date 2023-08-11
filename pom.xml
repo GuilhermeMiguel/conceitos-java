@@ -5,35 +5,35 @@
   <groupId>br.com.empresa</groupId>
   <artifactId>conceitos-java</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <build>
-    <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-compiler-plugin</artifactId>
-        <configuration>
-          <source>9</source>
-          <target>9</target>
-        </configuration>
-      </plugin>
-    </plugins>
-  </build>
-  <packaging>jar</packaging>
-
-  <name>java8</name>
-  <url>http://maven.apache.org</url>
-
+  <name>conceitos-java</name>
+  <description>Projeto para estudos dos conceitos da linguagem Java</description>
+ 
   <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.source>1.8</maven.compiler.source>
-    <maven.compiler.target>1.8</maven.compiler.target>
-  </properties>
+  	<java.version>11</java.version>
+   </properties>
 
   <dependencies>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>3.8.1</version>
-      <scope>test</scope>
-    </dependency>
+   <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->
+<dependency>
+    <groupId>org.junit.jupiter</groupId>
+    <artifactId>junit-jupiter-api</artifactId>
+    <version>5.8.1</version>
+    <scope>test</scope>
+</dependency>
+
   </dependencies>
+  
+  <build>
+		<plugins>			
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<encoding>UTF-8</encoding>
+					<source>${java.version}</source>
+					<target>${java.version}</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 </project>

@@ -23,7 +23,7 @@ public class ReduceStreams {
 			//Ou seja, para o java somar a lista inteira ou somar agrupando por 2 tem que ser a mesma coisa
 		//Exemplo: (1 + 2) + (3 + 4) + (5 + 6) = 1 + 2 + 3 + 4 + 5 + 6
 		
-			//A subtração ´eum exemplo de função que não é associativa 
+			//A subtração é um exemplo de função que não é associativa
 		
 	//Precisa ser associativo para que se eu executar o meu stream em paralelo o resultado precisa ser o mesmo 
 	

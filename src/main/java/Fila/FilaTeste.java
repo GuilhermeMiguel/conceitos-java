@@ -16,7 +16,7 @@ public class FilaTeste {
 		String x1 = fila.remove();
 		System.out.println(x1);
 		
-		String verificaVazio = fila.vazio() == true ? "A lista esta vazia" : "A lista contem registros";
+		String verificaVazio = fila.vazio() ? "A lista esta vazia" : "A lista contem registros";
 		
 		System.out.println(verificaVazio);
 		
@@ -24,7 +24,7 @@ public class FilaTeste {
 		//IMPLEMENTAÇÃO DO JAVA DA FILA
 		
 		//Queue é uma interface
-		Queue<String> filaDoJava = new LinkedList<String>();
+		Queue<String> filaDoJava = new LinkedList<>();
 		
 		filaDoJava.add("Mauricio");
 		String saiu = filaDoJava.poll();

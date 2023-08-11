@@ -29,7 +29,7 @@ public class Implementando2InterfacesTeste {
 		  	Com a instancia de um objeto do tipo da classe, eu posso chamar os metodos definidos em ambas as interfaces
 		*/
 		
-		var implementando2Interfaces = new Implementando2Interfaces();
+		Implementando2Interfaces implementando2Interfaces = new Implementando2Interfaces();
 		
 		System.out.println(implementando2Interfaces.consultar("implementando2Interfaces"));
 		

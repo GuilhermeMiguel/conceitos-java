@@ -20,6 +20,7 @@ public class Equals_HashCodeTeste {
 			Se for comparado com == dará true			
 			
 			porém quando eu faço um new String eu gero uma nova (novo endereço de memória), então mesmo com o conteudo igual, da false para ==
+			//dará true também
 		*/
 		
 		

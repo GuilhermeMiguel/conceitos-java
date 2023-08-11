@@ -88,6 +88,41 @@ public class Java8_Optional_2 {
 		
 		
 		
+		
+		//========================================================================================================
+		
+		//Filter
+		//ifPresent
+		returnOptionalInteger()
+				   .filter(num -> num >= 5)
+				   .ifPresentOrElse(
+						   n -> System.out.println("Número maior ou igual a 5: " + n),
+						   () -> System.out.println("Número menor que 5")
+				   );
+		
+		
+		
+		//flatMap
+		/*
+		  		Quando eu tenho um optional dentro de um optional, eu devo usar getMap para pegar o valor dele
+		  	Senao o resultado seria meio que um Optional<Optional<String>>
+		  	
+		  	Optional<Optional<String>> email = Pessoa.retornaOptionalPessoa()
+				.map(Pessoa::getEmail);
+				
+				A maneira correta é utilizar o flatmap
+			Dessa forma ele criar somente um optional e não 2
+		*/
+		
+	  	Optional<String> email = Pessoa.retornaOptionalPessoa()
+				.flatMap(Pessoa::getEmail);
+		
+		
+		
+	}
+	
+	private static Optional<Integer> returnOptionalInteger() {
+		return Optional.of(4);
 	}
 }
 
@@ -108,5 +143,10 @@ class Pessoa {
 	//Volta um Optional
 	public Optional<String> getEmail() {
 		return Optional.ofNullable(email);
+	}
+	
+	public static Optional<Pessoa> retornaOptionalPessoa() {
+		var pessoa = new Pessoa("José", "eamilJose");
+		return Optional.of(pessoa);
 	}
 }

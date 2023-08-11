@@ -13,36 +13,99 @@ public class Java8_Optional {
 		
 		rodaConsole();
 		
-		Optional<Integer> numero = converteEmNumero(s1); //Esse é um objeto que pode ou não conter um número inteiro
+		
+		/*
+		 	Esse é um objeto que pode ou não conter um número inteiro	
+		*/
+		
+		Optional<Integer> numero = converteEmNumero(s1); 
 		
 		
-		//Método isPresent
-		System.out.println(numero.isPresent()); //Verifica se existe valor ou não e retorna true or false
+		/*
+		 	===========================
+		  		1º Método -- isPresent
+		  	===========================
+		  	
+		  	Verifica se existe valor ou não => retorna true ou false
+		  	
+		*/
+		System.out.println(numero.isPresent()); 		
 		
 		
-		//Método isPresent se passando como parametro uma expressão lambda
-		numero.ifPresent(n -> System.out.println(n)); //Se existir valor ele executa esse código (a expressao lambda) e imprime o valor
+		/*
+		 
+			Método ifPresent => passando como parametro uma expressão lambda
+		
+			Se existir valor ele executa esse código (a expressao lambda) e imprime o valor
+			
+		*/
+		numero.ifPresent(n -> System.out.println("Número dentro do Optional: " + n)); 
 		// |
 		//  `---> É um If implicito
 		
 		
-		//Método get
-		System.out.println(numero.get()); //Pega o valor do optional, porém se for passado uma string com frase/letras, lança uma exceção
-				
+		/*
+		 	Método ifPresent => passando como parametro um method reference
+		*/
+		System.out.println("ifPresent com Method Reference");
+		numero.ifPresent(System.out::println);
 		
-		//Método orElse
-		Integer num = converteEmNumero(s).orElse(2); //Aqui se ele não consegue pegar o valor do número ele substitui por um valor
+		
+		
+		
+		
+		/*
+		  	===========================
+		  		2º Método get
+		  	===========================
+		  	
+		  	Pega o valor do optional 
+		*/
+		
+		System.out.println("Método get: " + numero.get()); 
+		
+		
+		
+		
+		
+		/*
+	  		===========================
+	  			3º Método orElse
+	  		===========================
+	  	
+	  		Se ele não consegue pegar o valor do número, substitui por um valor default
+		*/
+		
+		
+		
+		Integer num = converteEmNumero(s).orElse(2); 
 		//padrão que no caso é o 2 -- valor default
 		
-		System.out.println(num);
+		System.out.println("Número retornado no Método OrElse: " + num);
 		
 		
-		//Método orElseGet
+		
+		
+		
+		
+		/*
+  			===========================
+  				3º Método orElseGet
+  			===========================
+  	
+  				Nesse caso ele retorna igual a operação anterior, porém 
+			se a minha condição de existir um número na string for atendida, dessa forma eu tenho um ganho muito grande de performance
+			
+		 */
+		
+		
 		Integer num2 = converteEmNumero(s)
-				.orElseGet(() -> {return operacaoPesada();}); //Nesse caso ele retorn aigual a operação anterior, porém 
-		//se a minha condição de existir um número na string for atendida, dessa forma eu tenho um ganho muito grande de performance
+				.orElseGet(() -> {return operacaoPesada();}); 
 		
 		System.out.println(num2);
+		
+		
+		
 		
 		//orElseThrow
 		Integer num3 = converteEmNumero(s)
@@ -66,10 +129,13 @@ public class Java8_Optional {
 		System.out.println(teste);
 	}
 	
+	
 	//Metodo criado de exemplo só para nao gerar erro na classe
 	private static Integer operacaoPesada() {
 		return null;
 	}
+	
+	
 
 	public static Optional<Integer> converteEmNumero(String numeroStr) {
 		try {
@@ -97,7 +163,7 @@ public class Java8_Optional {
 		}
 	}
 	
-	//Sobre Carga
+	//Sobrecarga de método
 	public static OptionalInt converteEmNumeroInt() {
 		return null;
 	}
