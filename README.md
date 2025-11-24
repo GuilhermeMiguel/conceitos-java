@@ -22,61 +22,61 @@ Este repositório contém uma coleção completa de conceitos Java organizados d
 ### 🔧 Fundamentos
 | Tópico | Descrição | Documentação |
 |--------|-----------|--------------|
-| **Strings** | Manipulação, performance, StringBuilder vs StringBuffer | [📖 Ver Docs](src/main/java/br/com/estudos/fundamentos/string/README.md) |
-| **Wrapper Classes** | Autoboxing, unboxing, classes wrapper | [📖 Ver Docs](src/main/java/br/com/estudos/fundamentos/wrapper/) |
-| **Enumeradores** | Enums, métodos, casos de uso | [📖 Ver Docs](src/main/java/br/com/estudos/fundamentos/enumeradores/) |
-| **Assertions** | Debugging com assertions | [📖 Ver Docs](src/main/java/br/com/estudos/fundamentos/assertivas/) |
-| **Conceitos Úteis** | Varargs, método main, dicas gerais | [📖 Ver Docs](src/main/java/br/com/estudos/fundamentos/conceitos/) |
+| **Strings** | Manipulação, performance, StringBuilder vs StringBuffer | [📖 Ver Docs](docs/fundamentos/string/README.md) |
+| **Wrapper Classes** | Autoboxing, unboxing, classes wrapper | [📖 Ver Docs](docs/fundamentos/wrapper/README.md) |
+| **Enumeradores** | Enums, métodos, casos de uso | [📖 Ver Docs](docs/fundamentos/enumeradores/README.md) |
+| **Assertions** | Debugging com assertions | [📖 Ver Docs](docs/fundamentos/assertivas/README.md) |
+| **Conceitos Úteis** | Varargs, método main, dicas gerais | [📖 Ver Docs](docs/fundamentos/conceitos/README.md) |
 
 ### 🎯 Orientação a Objetos (OOP)
 | Tópico | Descrição | Documentação |
 |--------|-----------|--------------|
-| **Herança** | Extends, super, this, hierarquias | [📖 Ver Docs](src/main/java/br/com/estudos/oop/heranca/README.md) |
-| **Classes Abstratas** | Abstract classes, métodos abstratos | [📖 Ver Docs](src/main/java/br/com/estudos/oop/classes_abstratas/) |
-| **Interfaces** | Contratos, métodos default, múltiplas interfaces | [📖 Ver Docs](src/main/java/br/com/estudos/oop/interfaces/) |
-| **Polimorfismo** | Sobrescrita, sobrecarga, dynamic binding | [📖 Ver Docs](src/main/java/br/com/estudos/oop/polimorfismo/) |
-| **Modificadores** | Static, final, access modifiers | [📖 Ver Docs](src/main/java/br/com/estudos/oop/modificadores/) |
-| **Equals & HashCode** | Implementação correta, contratos | [📖 Ver Docs](src/main/java/br/com/estudos/oop/equals_hashcode/) |
+| **Herança** | Extends, super, this, hierarquias | [📖 Ver Docs](docs/oop/heranca/README.md) |
+| **Classes Abstratas** | Abstract classes, métodos abstratos | [📖 Ver Docs](docs/oop/classes_abstratas/README.md) |
+| **Interfaces** | Contratos, métodos default, múltiplas interfaces | [📖 Ver Docs](docs/oop/interfaces/README.md) |
+| **Polimorfismo** | Sobrescrita, sobrecarga, dynamic binding | [📖 Ver Docs](docs/oop/polimorfismo/README.md) |
+| **Modificadores** | Static, final, access modifiers | [📖 Ver Docs](docs/oop/modificadores/README.md) |
+| **Equals & HashCode** | Implementação correta, contratos | [📖 Ver Docs](docs/oop/equals_hashcode/README.md) |
 
 ### 📚 Coleções (Collections)
 | Tópico | Descrição | Documentação |
 |--------|-----------|--------------|
-| **Set** | HashSet, TreeSet, LinkedHashSet | [📖 Ver Docs](src/main/java/br/com/estudos/colecoes/set/) |
-| **Map** | HashMap, TreeMap, LinkedHashMap | [📖 Ver Docs](src/main/java/br/com/estudos/colecoes/map/) |
-| **Queue** | Filas, Deque, PriorityQueue | [📖 Ver Docs](src/main/java/br/com/estudos/colecoes/queue/) |
-| **Stack** | Pilhas, LIFO operations | [📖 Ver Docs](src/main/java/br/com/estudos/colecoes/stack/) |
-| **List** | ArrayList, LinkedList, Vector | [📖 Ver Docs](src/main/java/br/com/estudos/colecoes/list/) |
+| **Set** | HashSet, TreeSet, LinkedHashSet | [📖 Ver Docs](docs/colecoes/set/README.md) |
+| **Map** | HashMap, TreeMap, LinkedHashMap | [📖 Ver Docs](docs/colecoes/map/README.md) |
+| **Queue** | Filas, Deque, PriorityQueue | [📖 Ver Docs](docs/colecoes/queue/README.md) |
+| **Stack** | Pilhas, LIFO operations | [📖 Ver Docs](docs/colecoes/stack/README.md) |
+| **List** | ArrayList, LinkedList, Vector | [📖 Ver Docs](docs/colecoes/list/README.md) |
 
 ### ⚡ Concorrência
 | Tópico | Descrição | Documentação |
 |--------|-----------|--------------|
-| **Threads** | Criação, ciclo de vida, estados | [📖 Ver Docs](src/main/java/br/com/estudos/concorrencia/threads/README.md) |
-| **Sincronização** | Synchronized, locks, atomic | [📖 Ver Docs](src/main/java/br/com/estudos/concorrencia/sincronizacao/) |
-| **Deadlock** | Prevenção, detecção, resolução | [📖 Ver Docs](src/main/java/br/com/estudos/concorrencia/deadlock/) |
-| **Wait/Notify** | Comunicação entre threads | [📖 Ver Docs](src/main/java/br/com/estudos/concorrencia/wait_notify/) |
+| **Threads** | Criação, ciclo de vida, estados | [📖 Ver Docs](docs/concorrencia/threads/README.md) |
+| **Sincronização** | Synchronized, locks, atomic | [📖 Ver Docs](docs/concorrencia/sincronizacao/README.md) |
+| **Deadlock** | Prevenção, detecção, resolução | [📖 Ver Docs](docs/concorrencia/deadlock/README.md) |
+| **Wait/Notify** | Comunicação entre threads | [📖 Ver Docs](docs/concorrencia/wait_notify/README.md) |
 
 ### 💾 Entrada/Saída (I/O)
 | Tópico | Descrição | Documentação |
 |--------|-----------|--------------|
-| **I/O Clássico** | File, FileReader, BufferedReader | [📖 Ver Docs](src/main/java/br/com/estudos/io/classico/) |
-| **NIO** | Path, Files, Channels, selectors | [📖 Ver Docs](src/main/java/br/com/estudos/io/nio/) |
-| **Serialização** | Serializable, transient, versionUID | [📖 Ver Docs](src/main/java/br/com/estudos/io/serializacao/) |
+| **I/O Clássico** | File, FileReader, BufferedReader | [📖 Ver Docs](docs/io/classico/README.md) |
+| **NIO** | Path, Files, Channels, selectors | [📖 Ver Docs](docs/io/nio/README.md) |
+| **Serialização** | Serializable, transient, versionUID | [📖 Ver Docs](docs/io/serializacao/README.md) |
 
 ### 🚀 Java 8+ Features
 | Tópico | Descrição | Documentação |
 |--------|-----------|--------------|
-| **Lambdas** | Expressões lambda, functional interfaces | [📖 Ver Docs](src/main/java/br/com/estudos/java8plus/lambdas/) |
-| **Streams** | Stream API, collectors, parallel streams | [📖 Ver Docs](src/main/java/br/com/estudos/java8plus/streams/) |
-| **Optional** | Evitando NullPointerException | [📖 Ver Docs](src/main/java/br/com/estudos/java8plus/optional/) |
-| **Data/Hora** | LocalDate, LocalTime, ZonedDateTime | [📖 Ver Docs](src/main/java/br/com/estudos/java8plus/data_hora/) |
-| **Method Reference** | Referências de método | [📖 Ver Docs](src/main/java/br/com/estudos/java8plus/method_reference/) |
-| **🆕 Java 21** | Records, Sealed Classes, Virtual Threads | [📖 Ver Docs](src/main/java/br/com/estudos/java8plus/java21/README.md) |
+| **Lambdas** | Expressões lambda, functional interfaces | [📖 Ver Docs](docs/java8plus/lambdas/README.md) |
+| **Streams** | Stream API, collectors, parallel streams | [📖 Ver Docs](docs/java8plus/streams/README.md) |
+| **Optional** | Evitando NullPointerException | [📖 Ver Docs](docs/java8plus/optional/README.md) |
+| **Data/Hora** | LocalDate, LocalTime, ZonedDateTime | [📖 Ver Docs](docs/java8plus/data_hora/README.md) |
+| **Method Reference** | Referências de método | [📖 Ver Docs](docs/java8plus/method_reference/README.md) |
+| **🆕 Java 21** | Records, Sealed Classes, Virtual Threads | [📖 Ver Docs](docs/java8plus/java21/README.md) |
 
 ### 🏗️ Estruturas de Dados
 | Tópico | Descrição | Documentação |
 |--------|-----------|--------------|
-| **Lista Ligada** | Implementação própria, algoritmos | [📖 Ver Docs](src/main/java/br/com/estudos/estruturas/lista_ligada/) |
-| **Generics** | Type parameters, wildcards, bounded types | [📖 Ver Docs](src/main/java/br/com/estudos/estruturas/generics/) |
+| **Lista Ligada** | Implementação própria, algoritmos | [📖 Ver Docs](docs/estruturas/lista_ligada/README.md) |
+| **Generics** | Type parameters, wildcards, bounded types | [📖 Ver Docs](docs/estruturas/generics/README.md) |
 
 ---
 
