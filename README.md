@@ -1,147 +1,199 @@
-# Conceitos Java - Projeto de Estudos
+# ☕ Conceitos Java - Guia Completo
 
-Este projeto contém exemplos práticos e estudos sobre diversos conceitos da linguagem Java, atualizado para **Java 21 LTS**.
+> **Projeto de estudos abrangente sobre Java 21 LTS com exemplos práticos e documentação detalhada**
 
-## 🚀 Melhorias Implementadas
+[![Java](https://img.shields.io/badge/Java-21%20LTS-orange.svg)](https://openjdk.java.net/projects/jdk/21/)
+[![Maven](https://img.shields.io/badge/Maven-3.11.0-blue.svg)](https://maven.apache.org/)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-1. ✅ **Atualização para Java 21 LTS** (de Java 11)
-2. ✅ **Reorganização completa de packages** seguindo convenções Java
-3. ✅ **Atualização de dependências** (JUnit 5.10.1, Maven 3.11.0)
-4. ✅ **Estrutura mais clara e organizada** por domínios
-5. ✅ **Suporte a preview features** do Java 21
-6. ✅ **Exemplos das novas features** (Records, Sealed Classes, Virtual Threads)
+## 🎯 Sobre o Projeto
 
-## 📁 Nova Estrutura do Projeto
+Este repositório contém uma coleção completa de conceitos Java organizados de forma didática, desde fundamentos até features avançadas do Java 21 LTS. Cada tópico inclui:
 
-### 🔧 br.com.estudos.fundamentos
-- **string**: Manipulação de strings, performance (StringBuilder, StringBuffer)
-- **wrapper**: Classes wrapper e autoboxing/unboxing
-- **enumeradores**: Uso de enums e suas funcionalidades
-- **assertivas**: Uso de assertions para debugging
-- **conceitos**: Varargs, método main, conceitos úteis
-
-### 🎯 br.com.estudos.oop (Orientação a Objetos)
-- **heranca**: Conceitos de herança, super, this
-- **classes_abstratas**: Implementação de classes abstratas
-- **interfaces**: Uso de interfaces e métodos default
-- **polimorfismo**: Exemplos práticos de polimorfismo
-- **modificadores**: Static, final, access modifiers
-- **equals_hashcode**: Implementação correta de equals() e hashCode()
-
-### 📚 br.com.estudos.colecoes
-- **set**: HashSet, TreeSet, LinkedHashSet
-- **map**: HashMap, TreeMap, LinkedHashMap
-- **queue**: Implementações de fila (Queue, Deque)
-- **stack**: Implementações de pilha
-- **list**: ArrayList, LinkedList (a ser migrado)
-
-### ⚡ br.com.estudos.concorrencia
-- **threads**: Criação e gerenciamento de threads
-- **sincronizacao**: Synchronized, locks, atomic
-- **deadlock**: Prevenção e detecção de deadlocks
-- **wait_notify**: Comunicação entre threads
-
-### 💾 br.com.estudos.io
-- **classico**: File, FileReader, FileWriter, BufferedReader
-- **nio**: New I/O API (Path, Files, Channels)
-- **serializacao**: Serialização de objetos
-
-### 🆕 br.com.estudos.java8plus
-- **lambdas**: Expressões lambda, functional interfaces
-- **streams**: Stream API, collectors, parallel streams
-- **optional**: Uso do Optional para evitar NullPointerException
-- **data_hora**: Nova API de data e hora (LocalDate, LocalTime)
-- **method_reference**: Referências de método
-- **java21**: **NOVO!** Records, Sealed Classes, Virtual Threads, Pattern Matching
-
-### 🏗️ br.com.estudos.estruturas
-- **lista_ligada**: Implementação própria de lista ligada
-- **generics**: Uso de generics, wildcards, bounded types
-
-## 🔧 Versão e Configuração
-
-- **Java**: 21 LTS (OpenJDK Corretto)
-- **Maven**: 3.11.0
-- **JUnit**: 5.10.1
-- **Preview Features**: Habilitado para Java 21
-
-## 🚀 Como Executar
-
-### Compilação
-```bash
-# Compilar todo o projeto
-mvn clean compile
-
-# Compilar arquivo específico
-javac --enable-preview --release 21 src/main/java/br/com/estudos/fundamentos/string/StringTeste.java
-```
-
-### Execução
-```bash
-# Executar exemplo básico
-java -cp src/main/java br.com.estudos.fundamentos.string.StringTeste
-
-# Executar exemplo Java 21 (com preview features)
-java --enable-preview -cp src/main/java br.com.estudos.java8plus.java21.Java21Features
-```
-
-### Executar com Maven
-```bash
-mvn exec:java -Dexec.mainClass="br.com.estudos.fundamentos.string.StringTeste"
-```
-
-## 🆕 Novas Features Java 21
-
-O projeto agora inclui exemplos das principais features do Java 21:
-
-- **Records**: Classes de dados imutáveis
-- **Sealed Classes**: Controle de hierarquia de classes
-- **Pattern Matching**: Switch expressions melhoradas
-- **Virtual Threads**: Threads leves para alta concorrência
-- **Text Blocks**: Strings multilinha
-
-## 📋 Scripts Utilitários
-
-- `migrate.sh`: Script usado para migrar arquivos (já executado)
-- `cleanup.sh`: Remove estrutura antiga após confirmação da migração
-
-## 🧪 Testes
-
-```bash
-# Executar testes
-mvn test
-
-# Executar testes com preview features
-mvn test -Dargline="--enable-preview"
-```
-
-## 📖 Exemplos de Uso
-
-### String Performance
-```java
-// Localização: br.com.estudos.fundamentos.string
-java -cp src/main/java br.com.estudos.fundamentos.string.StringPerformanceTeste
-```
-
-### Java 21 Features
-```java
-// Localização: br.com.estudos.java8plus.java21
-java --enable-preview -cp src/main/java br.com.estudos.java8plus.java21.Java21Features
-```
-
-### Threads e Concorrência
-```java
-// Localização: br.com.estudos.concorrencia.threads
-java -cp src/main/java br.com.estudos.concorrencia.threads.ThreadTeste
-```
-
-## 🎯 Próximos Passos
-
-- [ ] Adicionar mais exemplos de Virtual Threads
-- [ ] Implementar testes unitários para todos os módulos
-- [ ] Adicionar exemplos de Project Loom
-- [ ] Documentar padrões de design implementados
+- 📝 **Documentação detalhada** com explicações teóricas
+- 💻 **Exemplos práticos** executáveis
+- 🎯 **Casos de uso reais**
+- 💡 **Boas práticas** e dicas
 
 ---
 
-**Nota**: Este projeto foi completamente reorganizado e atualizado para Java 21. A estrutura antiga foi migrada para seguir as melhores práticas de organização de packages Java.
+## 📚 Índice de Conteúdo
+
+### 🔧 Fundamentos
+| Tópico | Descrição | Documentação |
+|--------|-----------|--------------|
+| **Strings** | Manipulação, performance, StringBuilder vs StringBuffer | [📖 Ver Docs](src/main/java/br/com/estudos/fundamentos/string/README.md) |
+| **Wrapper Classes** | Autoboxing, unboxing, classes wrapper | [📖 Ver Docs](src/main/java/br/com/estudos/fundamentos/wrapper/) |
+| **Enumeradores** | Enums, métodos, casos de uso | [📖 Ver Docs](src/main/java/br/com/estudos/fundamentos/enumeradores/) |
+| **Assertions** | Debugging com assertions | [📖 Ver Docs](src/main/java/br/com/estudos/fundamentos/assertivas/) |
+| **Conceitos Úteis** | Varargs, método main, dicas gerais | [📖 Ver Docs](src/main/java/br/com/estudos/fundamentos/conceitos/) |
+
+### 🎯 Orientação a Objetos (OOP)
+| Tópico | Descrição | Documentação |
+|--------|-----------|--------------|
+| **Herança** | Extends, super, this, hierarquias | [📖 Ver Docs](src/main/java/br/com/estudos/oop/heranca/README.md) |
+| **Classes Abstratas** | Abstract classes, métodos abstratos | [📖 Ver Docs](src/main/java/br/com/estudos/oop/classes_abstratas/) |
+| **Interfaces** | Contratos, métodos default, múltiplas interfaces | [📖 Ver Docs](src/main/java/br/com/estudos/oop/interfaces/) |
+| **Polimorfismo** | Sobrescrita, sobrecarga, dynamic binding | [📖 Ver Docs](src/main/java/br/com/estudos/oop/polimorfismo/) |
+| **Modificadores** | Static, final, access modifiers | [📖 Ver Docs](src/main/java/br/com/estudos/oop/modificadores/) |
+| **Equals & HashCode** | Implementação correta, contratos | [📖 Ver Docs](src/main/java/br/com/estudos/oop/equals_hashcode/) |
+
+### 📚 Coleções (Collections)
+| Tópico | Descrição | Documentação |
+|--------|-----------|--------------|
+| **Set** | HashSet, TreeSet, LinkedHashSet | [📖 Ver Docs](src/main/java/br/com/estudos/colecoes/set/) |
+| **Map** | HashMap, TreeMap, LinkedHashMap | [📖 Ver Docs](src/main/java/br/com/estudos/colecoes/map/) |
+| **Queue** | Filas, Deque, PriorityQueue | [📖 Ver Docs](src/main/java/br/com/estudos/colecoes/queue/) |
+| **Stack** | Pilhas, LIFO operations | [📖 Ver Docs](src/main/java/br/com/estudos/colecoes/stack/) |
+| **List** | ArrayList, LinkedList, Vector | [📖 Ver Docs](src/main/java/br/com/estudos/colecoes/list/) |
+
+### ⚡ Concorrência
+| Tópico | Descrição | Documentação |
+|--------|-----------|--------------|
+| **Threads** | Criação, ciclo de vida, estados | [📖 Ver Docs](src/main/java/br/com/estudos/concorrencia/threads/README.md) |
+| **Sincronização** | Synchronized, locks, atomic | [📖 Ver Docs](src/main/java/br/com/estudos/concorrencia/sincronizacao/) |
+| **Deadlock** | Prevenção, detecção, resolução | [📖 Ver Docs](src/main/java/br/com/estudos/concorrencia/deadlock/) |
+| **Wait/Notify** | Comunicação entre threads | [📖 Ver Docs](src/main/java/br/com/estudos/concorrencia/wait_notify/) |
+
+### 💾 Entrada/Saída (I/O)
+| Tópico | Descrição | Documentação |
+|--------|-----------|--------------|
+| **I/O Clássico** | File, FileReader, BufferedReader | [📖 Ver Docs](src/main/java/br/com/estudos/io/classico/) |
+| **NIO** | Path, Files, Channels, selectors | [📖 Ver Docs](src/main/java/br/com/estudos/io/nio/) |
+| **Serialização** | Serializable, transient, versionUID | [📖 Ver Docs](src/main/java/br/com/estudos/io/serializacao/) |
+
+### 🚀 Java 8+ Features
+| Tópico | Descrição | Documentação |
+|--------|-----------|--------------|
+| **Lambdas** | Expressões lambda, functional interfaces | [📖 Ver Docs](src/main/java/br/com/estudos/java8plus/lambdas/) |
+| **Streams** | Stream API, collectors, parallel streams | [📖 Ver Docs](src/main/java/br/com/estudos/java8plus/streams/) |
+| **Optional** | Evitando NullPointerException | [📖 Ver Docs](src/main/java/br/com/estudos/java8plus/optional/) |
+| **Data/Hora** | LocalDate, LocalTime, ZonedDateTime | [📖 Ver Docs](src/main/java/br/com/estudos/java8plus/data_hora/) |
+| **Method Reference** | Referências de método | [📖 Ver Docs](src/main/java/br/com/estudos/java8plus/method_reference/) |
+| **🆕 Java 21** | Records, Sealed Classes, Virtual Threads | [📖 Ver Docs](src/main/java/br/com/estudos/java8plus/java21/README.md) |
+
+### 🏗️ Estruturas de Dados
+| Tópico | Descrição | Documentação |
+|--------|-----------|--------------|
+| **Lista Ligada** | Implementação própria, algoritmos | [📖 Ver Docs](src/main/java/br/com/estudos/estruturas/lista_ligada/) |
+| **Generics** | Type parameters, wildcards, bounded types | [📖 Ver Docs](src/main/java/br/com/estudos/estruturas/generics/) |
+
+---
+
+## 🚀 Como Usar Este Projeto
+
+### Pré-requisitos
+- ☕ **Java 21 LTS** ou superior
+- 📦 **Maven 3.11.0** ou superior
+- 🔧 **IDE** de sua preferência (IntelliJ, Eclipse, VS Code)
+
+### Executando os Exemplos
+
+```bash
+# Clonar o repositório
+git clone https://github.com/GuilhermeMiguel/conceitos-java.git
+cd conceitos-java
+
+# Compilar o projeto
+mvn clean compile
+
+# Executar exemplo específico
+java -cp src/main/java br.com.estudos.fundamentos.string.StringTeste
+
+# Executar features Java 21 (com preview)
+java --enable-preview -cp src/main/java br.com.estudos.java8plus.java21.Java21Features
+```
+
+### Estrutura do Projeto
+```
+src/main/java/br/com/estudos/
+├── 🔧 fundamentos/          # Conceitos básicos
+├── 🎯 oop/                  # Orientação a Objetos
+├── 📚 colecoes/             # Collections Framework
+├── ⚡ concorrencia/         # Threads e Concorrência
+├── 💾 io/                   # Entrada e Saída
+├── 🚀 java8plus/            # Features modernas
+└── 🏗️ estruturas/          # Estruturas de Dados
+```
+
+---
+
+## 🎯 Destaques do Java 21
+
+### 🆕 Principais Features
+- **Records**: Classes de dados concisas
+- **Sealed Classes**: Hierarquias controladas
+- **Pattern Matching**: Switch expressions poderosas
+- **Virtual Threads**: Concorrência massiva
+- **Text Blocks**: Strings multilinha
+
+### 💡 Exemplo Rápido
+```java
+// Record com validação
+public record Pessoa(String nome, int idade) {
+    public Pessoa {
+        if (idade < 0) throw new IllegalArgumentException("Idade inválida");
+    }
+}
+
+// Pattern matching
+String resultado = switch (forma) {
+    case Circulo c -> "Área: " + c.area();
+    case Retangulo r -> "Área: " + r.area();
+};
+
+// Virtual Threads
+Thread.ofVirtual().start(() -> {
+    // Tarefa leve e rápida
+});
+```
+
+---
+
+## 📊 Estatísticas do Projeto
+
+- 📁 **145+ arquivos** de código e documentação
+- 🎯 **30+ conceitos** cobertos
+- 💻 **100+ exemplos** práticos
+- 📝 **Documentação completa** para cada tópico
+- ✅ **Java 21 LTS** com preview features
+
+---
+
+## 🤝 Contribuindo
+
+Contribuições são bem-vindas! Para contribuir:
+
+1. 🍴 Fork o projeto
+2. 🌟 Crie uma branch para sua feature
+3. 💻 Implemente suas mudanças
+4. 📝 Adicione documentação
+5. 🧪 Teste seus exemplos
+6. 📤 Abra um Pull Request
+
+---
+
+## 📄 Licença
+
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para detalhes.
+
+---
+
+## 🎓 Sobre
+
+Este projeto foi criado como um guia de estudos abrangente para desenvolvedores Java, cobrindo desde conceitos fundamentais até as features mais recentes do Java 21 LTS.
+
+**Desenvolvido com ❤️ para a comunidade Java**
+
+---
+
+### 🔗 Links Úteis
+
+- [📚 Documentação Oficial Java](https://docs.oracle.com/en/java/javase/21/)
+- [🚀 OpenJDK 21](https://openjdk.java.net/projects/jdk/21/)
+- [📦 Maven Central](https://search.maven.org/)
+- [🛠️ IntelliJ IDEA](https://www.jetbrains.com/idea/)
+
+---
+
+**⭐ Se este projeto te ajudou, considere dar uma estrela!**
